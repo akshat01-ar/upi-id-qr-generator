@@ -4,5 +4,5 @@ upi = input("enter your upi id : ")
 js = f"upi://pay?pa={upi}&pn=Recipient%20Name&mc=1234"
 img = qr.make(js)
 img.save(f"QR_{upi}.png")
-
+img.show()
     
